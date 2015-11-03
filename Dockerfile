@@ -45,4 +45,4 @@ VOLUME ["/opt/atlassian-home"]
 WORKDIR ${JIRA_HOME}
 
 # Run Atlassian JIRA as a foreground process by default.
-CMD ["/opt/atlassian/jira/bin/start-jira.sh", "-fg"]
+CMD ["/launch"]
