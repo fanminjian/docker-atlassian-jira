@@ -1,5 +1,4 @@
-FROM java:8
-
+FROM durdn/atlassian-base
 # Configuration variables.
 ENV JIRA_HOME     /opt/atlassian-home
 ENV JIRA_INSTALL  /opt/atlassian/jira
