@@ -32,8 +32,8 @@ RUN set -x \
 # on systems where multiple processes end up being executed by 'daemon' but
 # here we only ever run one process anyway.
 USER daemon:daemon
-ADD launch.bash /launch
 ENV CONTEXT_PATH ROOT
+ADD launch.bash /launch
 # Expose default HTTP connector port.
 EXPOSE 8080
 
