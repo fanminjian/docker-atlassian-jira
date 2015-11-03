@@ -2,6 +2,7 @@
 set -o errexit
 
 rm -f /opt/atlassian-home/.jira-home.lock
+cd /opt/atlassian/jira
 
 if [ "$CONTEXT_PATH" == "ROOT" -o -z "$CONTEXT_PATH" ]; then
   CONTEXT_PATH=
