@@ -27,7 +27,7 @@ RUN set -x \
     && chown -R daemon:daemon  "${JIRA_INSTALL}/work" \
     && sed --in-place          "s/java version/openjdk version/g" "${JIRA_INSTALL}/bin/check-java.sh" \
     && echo -e                 "\njira.home=$JIRA_HOME" >> "${JIRA_INSTALL}/atlassian-jira/WEB-INF/classes/jira-application.properties" \
-    && mv                      "${JIRA_INSTALL}/conf/server.xml ${JIRA_INSTALL}/conf/server-backup.xml"
+    && mv                      "${JIRA_INSTALL}/conf/server.xml" "${JIRA_INSTALL}/conf/server-backup.xml"
 
 # Use the default unprivileged account. This could be considered bad practice
 # on systems where multiple processes end up being executed by 'daemon' but
