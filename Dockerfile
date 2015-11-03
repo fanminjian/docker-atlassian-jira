@@ -1,7 +1,7 @@
 FROM java:8
 
 # Configuration variables.
-ENV JIRA_HOME     /var/atlassian/jira
+ENV JIRA_HOME     /opt/atlassian-home
 ENV JIRA_INSTALL  /opt/atlassian/jira
 ENV JIRA_VERSION  7.0.0
 
